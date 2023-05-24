@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+
+
+*{
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+ 
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+}
+
+header a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo{
+  font-size: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.post img{
+  width: 100%;
+  
+}
+
+.post{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+
+}
+
+.login, .register{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input{
+  display: block;
+  width: 100%;
+  padding: 10px 7px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+form h1{
+  text-align: center;
+}
+
+form button{
+  width: 100%;
+  padding: 8px;
+  color: white;
+  background-color: rgb(50, 47, 47);
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+a{
+  cursor: pointer;
+}
+
+.singleimage img{
+  width: 100%;
+  height: 500px;
+}
+
+.singleh4{
+  font-size: 40px;
+  font-family: sans-serif;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.singlecontent{
+  font-size: 20px;
+  text-align: justify;
+  color: black;
+}
+
+header{
+  padding: 0 30px;
+  background-color: rgb(37, 36, 36);
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.createpost{
+
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+}
+
+.singlemain{
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+}
+
+.edit-btn{
+   background-color: rgb(79, 78, 78);
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  
+}
+.editsection{
+  text-align: end;
+  margin-bottom: 20px;
+}
+
+.deletebtn{
+  background-color: rgb(214, 49, 49);
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  
+
+}
+
+.deletesection{
+  text-align: end;
 }
